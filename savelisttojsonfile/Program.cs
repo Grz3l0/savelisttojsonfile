@@ -7,7 +7,7 @@ using System.Text.Json;
 class Program
 {
     static string filePath = "clients.json";
-
+    //aha
     static void Main()
     {
         while (true)
@@ -139,7 +139,7 @@ class Program
         string idInput = Console.ReadLine();
 
         if (!int.TryParse(idInput, out int id)){
-            Console.WriteLine("Błędne ID");
+            Console.WriteLine("Błędne ID.");
             return;
         }
         Client client = clients.FirstOrDefault(client => client.Id == id);
